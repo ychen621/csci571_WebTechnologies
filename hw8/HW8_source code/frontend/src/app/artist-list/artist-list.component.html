@@ -1,0 +1,13 @@
+<div class="container testimonial-group" *ngIf = '!showNotFound'>
+    <div class="row btn-group" *ngFor="let artist of artistList">
+        <button [class.selected]="artist === selectedArtist" class="btn btn-block" type="button" (click)="onSelect(artist)">
+            <img class="artistImage" src={{artist.image}}>
+            <div class="name">{{artist.title}}</div>
+        </button>
+    </div>
+</div>
+<div class="border border-danger rounded notFound" *ngIf = 'showNotFound'>
+    <p class="warningText">No results.</p>
+</div>
+<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status" *ngIf = "loading"></div>
+<app-tabs [artistInfo] = "artistInfo" [targetWork] = "targetWork" [showNoArtwork] = "showNoArtwork" [showTab] = "showTab"></app-tabs>

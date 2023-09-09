@@ -1,0 +1,11 @@
+ul{
+    margin: auto;
+    width: 80%;
+}
+.nav-item .nav-link{
+    color: black;
+}
+.nav-item .active{
+    background-color: #205375;
+    color: white;
+}

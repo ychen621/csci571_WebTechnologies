@@ -1,0 +1,20 @@
+<form (submit)="onSubmit(inputName.value)">
+    <div class="mb-3">
+      <input 
+        #inputName
+        type="text" 
+        class="form-control" 
+        aria-describedby="searchBar" 
+        placeholder="Please Enter an artist name.">
+    </div>
+    <!--Search button-->
+    <div class="col text-center">
+        <button id="searchBar" type="submit" class="btn btn-primary btn-sm"
+        [style.background-color]="inputName.value && inputName.value != '' ? '#205375' : '#6d8fa5'">
+            <span class="sr-only">Search </span>
+            <span id="spin" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf = "showSpinner"></span>
+        </button>
+        <button id="clear" type="reset" class="btn btn-secondary btn-sm" (click) = reloadPage()>Clear</button>
+    </div>
+</form>
+<app-artist-list [artistName] = 'artistName' [artistList] = 'artistList' [showNotFound] = 'showNotFound'></app-artist-list>

@@ -1,0 +1,14 @@
+div{
+    width: 80%;
+}
+.title{
+    text-align: center;
+    margin-top: 3%;
+}
+.nationality{
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+    padding-bottom: 10%;
+}

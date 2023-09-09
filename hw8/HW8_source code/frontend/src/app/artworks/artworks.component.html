@@ -1,0 +1,40 @@
+<div class="container" *ngIf = '!showNoArtwork'>
+    <div class="row">
+        <span class="col" *ngFor="let target of targetWork">
+            <div class="imageHolder"><img class="targetImage" src={{target.image}}></div>
+            <p>{{target.title}}</p>
+            <p>{{target.date}}</p>
+            <button class="btn btn-primary catBtn" type="button" data-toggle="modal" data-target="#exampleModal" (click)="open(content,target)">Categories</button>
+        </span>
+    </div>
+</div>
+<div class="border border-danger rounded notFound" *ngIf = 'showNoArtwork'>
+    <p class="warningText">No artworks.</p>
+</div>
+<app-genes [geneID] = "geneID"></app-genes>
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <div>
+            <img class="modal-title popupImage" src="{{workImage}}">
+        </div>
+        <div class="titleHolder">
+            <h6 class="modal-title" id="modal-basic-title">{{workName}}</h6>
+            <h6 class="modal-title" id="modal-basic-title">{{workDate}}</h6>
+        </div>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status" *ngIf = "loading"></div>
+        <div class="container">
+            <div class="row" *ngIf = '!showNoCategory'>
+                <span class="col2" *ngFor="let gene of geneContainer">
+                    <div calss="imageHolder2"><img class="catImage" src="{{gene.category}}"></div>
+                    <p>{{gene.name}}</p>
+                </span>
+            </div>
+            <div class="border border-danger rounded notCat" *ngIf = 'showNoCategory'>
+                <p class="noCat">No Categories.</p>
+            </div>
+        </div>
+    </div>
+</ng-template>

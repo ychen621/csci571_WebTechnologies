@@ -1,0 +1,85 @@
+.col{
+    max-width: 280px;
+    height: 450px;
+    padding: 0;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    border-color: #d7d6d8;
+    border-style: solid;
+    border-width: 1px;
+}
+.catBtn{
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: #205375;
+    border: none;
+}
+.col2{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    border-color: #d7d6d8;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.imageHolder{
+    height: 300px;
+    margin: auto;
+}
+.imageHolder2{
+    height: 300px;
+}
+.targetImage{
+    max-width:280px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titleHolder{
+    margin-left: 2%
+}
+.popupImage{
+    height:70px;
+}
+.catImage{
+    max-width: 250px;
+    height:300px;
+}
+.notFound{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #f8d7da;
+}
+.warningText{
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20px;
+    color: #b13a2e;
+}
+.notCat{
+    width: 80%;
+    margin: auto;
+    background-color: #f8d7da;
+}
+.noCat{
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 20px;
+    color: #b13a2e;
+}
+.spinner-border{
+    color: #205375;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 50%;
+    margin-right: 50%
+}

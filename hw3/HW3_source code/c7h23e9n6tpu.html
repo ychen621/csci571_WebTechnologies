@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW3</title>
+    <style>
+        .topChildren{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        #menu{
+            position: relative;
+            left: 150px;
+            font-family: verdana;
+        }
+        .button{
+            position:relative;
+            left: 1200px;
+            border: none;
+            font-weight: bold;
+            color: #d6d6d6;
+            background-color: white;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            margin: 4px 2px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        .button:hover{
+            color: black;
+        }
+        .imgbox{
+            position: relative;
+            max-width: 100%;
+        }
+        .textBox{
+            position: absolute;
+            top: 180px;
+            left: 150px;
+            width: 450px;
+            height: 490px;
+            border: none;
+            background-color: #0c3c5d;
+        }
+        .firstLine{
+            font-family: verdana;
+            font-size: 16px;
+            color: white;
+            margin-left: 60px;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+        .main{
+            font-family: verdana;
+            font-size: 38px;
+            color: white;
+            margin-left: 60px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .sub{
+            font-family: verdana;
+            font-style: italic;
+            font-size: 16px;
+            color: #efd619;
+            margin-left: 60px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #inputBox{
+            height: 50px;
+            width: 330px;
+            margin-left: 60px;
+            margin-top: 30;
+            margin-bottom: 0;
+        }
+        #notClickable{
+            height: 50px;
+            width: 160px;
+            border: none;
+            color: black;
+            background-color: #fadd15;
+            text-align: center;
+            text-decoration: none;
+            font-family: verdana;
+            font-size: 12px;
+            margin-left: 60px;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        .bottom{
+            height: 500px;
+            position: relative;
+            top: 150px;
+            left: 100px;
+        }
+        .feature{
+            display: inline-block;
+            margin-left: 45px;
+            margin-right: 40px;
+        }
+        .title{
+            font-size: 18px;
+            line-height: 2.5em;
+            font-family: Verdana;
+            font-weight: lighter;
+        }
+        .content{
+            width: 380px;
+            margin-bottom: 0;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 2em;
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            color: #8e8e8e;
+        }
+        #extra{
+            width: 380px;
+            margin-top: 0;
+            text-align: left;
+            line-height: 2em;
+            font-family: Verdana;
+            font-size: 12px;
+            font-weight: bold;
+            color: #8e8e8e;
+        }
+        #gray{
+            height: 200px;
+            width: 1600px;
+            border: none;
+            background-color: #f4f4f4;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="topParent">
+        <div class="topChildren"><p id="menu">MENU</p></div>
+        <div class="topChildren">
+            <a href="page2.html#about" target="_blank"><button class="button">About</button></a>
+            <a href="page2.html#projects" target="_blank"><button class="button">Projects</button></a>
+            <a href="page2.html#services" target="_blank"><button class="button">Services</button></a>
+        </div>
+    </div>
+    
+    <div class="imgbox">
+        <img id="lawyer" src="lawyer.jpeg" alt="lawyer">
+        <div class="textBox">
+            <p class="firstLine">Don't wait</p>
+            <p class="main">IMPROVE</p>
+            <p class="main">YOUR BUSINESS</p>
+            <p class="main">TODAY!</p>
+            <p class="sub">- Get your hands on Biz Optima -</p>
+            <form>
+                <input id="inputBox" type="text" placeholder="Email">
+            </form>
+            <button id="notClickable">SIGN UP FOR FREE!</button>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="feature">
+            <h1 class="title">AMAZING FEATURE #1</h1>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adiposcing elit.
+                Sed maiesuada faucibus ex nec ulticies.
+                Donec mattis egestas nisi non pretium. Suspendisse nec eros ut erat facilisis maximus.
+                In congue et leo in varius.
+            </p>
+            <p id="extra">
+                Vestibulum sit amet fells omare, commodo orci ut, feuglat loreum.
+            </p>
+        </div>
+        <div class="feature">
+            <h1 class="title">AMAZING FEATURE #2</h1>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adiposcing elit.
+                Sed maiesuada faucibus ex nec ulticies.
+                Donec mattis egestas nisi non pretium. Suspendisse nec eros ut erat facilisis maximus.
+                In congue et leo in varius.
+            </p>
+            <p id="extra">
+                Vestibulum sit amet fells omare, commodo orci ut, feuglat loreum.
+            </p>
+        </div>
+        <div class="feature">
+            <h1 class="title">AMAZING FEATURE #3</h1>
+            <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adiposcing elit.
+                Sed maiesuada faucibus ex nec ulticies.
+                Donec mattis egestas nisi non pretium. Suspendisse nec eros ut erat facilisis maximus.
+                In congue et leo in varius.
+            </p>
+            <p id="extra">
+                Vestibulum sit amet fells omare, commodo orci ut, feuglat loreum.
+            </p>
+        </div>
+    </div>
+    <div id="gray"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hw6</title>
+    <link rel="stylesheet" href="static/styles.css" type="text/css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <p id="header">Artist Search</p>
+    
+    <div class="search">
+        <form id="search_form">
+            <button id="submit_button" type="submit"><img class="searching" id="magnifying" src="static/search_icon.png"></button>
+            <input class="searching" id="searchBar" type="text" value="" name="input_name" required placeholder="Please enter an artist name.">
+            <button id="clear_button" type="reset"><img class="searching" id="clear" src="static/clear_icon.png"></button>
+        </form>
+    </div>
+
+    <div id="not_found">
+        <div class="no_result">No results found.</div>
+    </div>
+
+    <div id="search_result">
+        <div id="result_list"></div>
+    </div>
+
+    <div id="dotdotdot">
+        <img class="loadingGif" src="static/loading.gif">
+    </div>
+
+    <div id="artist_content">
+        
+    </div>
+    
+    <p id="footer">
+        Powered by 
+        <img id="logo" src="static/artsy_logo.svg">
+        <a id="artsy" href="https://www.artsy.net/">Artsy.</a>
+    </p>
+</body>
+</html>
